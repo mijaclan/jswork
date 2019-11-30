@@ -5,24 +5,26 @@
     <meta charset="utf-8">
     <title>李泳江的万年历</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <style>
-        #ceshi {
-            text-align: left;
-        }
-    </style>
 </head>
 
-<body onload="startTime()">
-    <!--加入刷新时间-->
-    <div id="ceshi"></div>
-    <!--另一个js的脚本程序-->
+<body>
     <div class="selyear">
         <span class="preyear" id="preyear" data-year="" onclick="setCalendar(this.dataset.year)"></span>
         <span id="curyear"></span>
-        <span class="nextyear" id="nextyear" data-year="" onclick="setCaendar(this.dataset.year)"></span>
+        <span class="nextyear" id="nextyear" data-year="" onclick="setCalendar(this.dataset.year)"></span>
         <div class="box" id="cal"></div>
     </div>
     <script>
+        ////
+        var year1 = new Date().getFullYear()
+        var pre = year1 - 1
+        var next = year1 + 1
+        document.getElementById('curyear').setAttribute('data-year', year1);
+        document.getElementById('preyear').setAttribute('data-year', pre);
+        document.getElementById('nextyear').setAttribute('data-year', next);
+        document.getElementById('curyear').innerText = year1
+        document.getElementById('preyear').innerText = "<<" + pre
+        document.getElementById('nextyear').innerText = next + ">>"
     </script>
 </body>
 <script src="calendar.js"></script>

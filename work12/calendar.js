@@ -11,16 +11,15 @@ function calendar(y) {
         //获取月份m共有多少天
         var max = new Date(y, m, 0).getDate();
 
-        html += '<tr>';//开始,<tr>标签
+        html += '<tr>'; //开始,<tr>标签
         for (var d = 1; d <= max; ++d) {
-            if (w && d == 1) {//如果该月的第一天不是星期天，则填充空白
+            if (w && d == 1) { //如果该月的第一天不是星期天，则填充空白
                 html += '<td colspan="' + w + '">  </td>';
             }
             html += '<td>' + d + '</td>';
-            if (w == 6 && d != max) {//如果星期六不是该月的最后一天，那么就换行
+            if (w == 6 && d != max) { //如果星期六不是该月的最后一天，那么就换行
                 html += '<tr></tr>';
-            }
-            else if (d == max) {//该月的最后一天，用闭合《tr》标签
+            } else if (d == max) { //该月的最后一天，用闭合《tr》标签
                 html += '</tr>';
             }
             w = (w + 1 > 6) ? 0 : w + 1;
@@ -32,25 +31,4 @@ function calendar(y) {
     return html;
 
 
-}
-//////////////对时时间
-
-function startTime() {
-    var x = new Date();
-    var a = x.getHours();
-    var b = x.getMinutes();
-    var c = x.getSeconds();
-    b = checkTime(b);
-    c = checkTime(c);
-    y = document.getElementById("ceshi");
-    y.innerHTML=a+":"+b+":"+c;
-    t = setTimeout(function () {
-        startTime();
-    }, 1000)
-}
-function checkTime(i){
-    if(i<10){
-        i ="0" +i;
-    }
-    return i;
 }
