@@ -1,0 +1,51 @@
+h2 {
+    text-align: center;
+    text-shadow: 10px 5px 5px rgb(0, 255, 34);
+}
+
+h3 {
+    color: rgb(201, 40, 18);
+    text-align: center;
+}
+
+body {
+    background-image: url(qt/htmlandcss/imags/bjdetui.jpeg);
+    /*   background-position: center center;*/
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* 979px 780px;*/
+    img:first-child {
+        opacity: 0.7;
+    }
+    /*  这个是透明度*/
+}
+
+.coco {
+    text-align: center;
+}
+
+.one {
+    text-align: left;
+}
+
+.xiab {
+    text-align-last: center;
+}
+
+.linke {
+    text-align-last: center;
+}
+
+#zuoye ul li {
+    list-style: none;
+    text-decoration: none
+}
+#zuoye ul li a {
+    text-decoration: none
+}
+
+.zo{
+   
+    text-align: right center;
+
+}
