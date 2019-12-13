@@ -9,7 +9,7 @@ h3 {
 }
 
 body {
-    background-image: url(qt/htmlandcss/imags/bjdetui.jpeg);
+    background-image: url(qt/htmlandcss/imags/yuandan.jpg);
     /*   background-position: center center;*/
     background-repeat: no-repeat;
     background-size: auto;
@@ -40,12 +40,12 @@ body {
     list-style: none;
     text-decoration: none
 }
+
 #zuoye ul li a {
     text-decoration: none
 }
 
-.zo{
-   
+.zo {
+    position: relative;
     text-align: right center;
-
 }
