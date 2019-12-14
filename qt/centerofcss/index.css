@@ -14,10 +14,6 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     /* 979px 780px;*/
-    img:first-child {
-        opacity: 0.7;
-    }
-    /*  这个是透明度*/
 }
 
 .coco {

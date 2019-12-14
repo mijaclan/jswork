@@ -8,20 +8,14 @@
     <style>
         body {
             background-image: url(qt/htmlandcss/imags/yuandan.jpg);
-            /*   background-position: center center;*/
             background-repeat: repeat;
             background-size: auto;
-            /* 979px 780px;*/
-            img:first-child {
-                opacity: 0.7;
-            }
-            /*  这个是透明度*/
         }
         
         .zo {
             width: 200px;
             height: 400px;
-            position: relative;
+            position: absolute;
             float: left;
         }
         
@@ -30,6 +24,8 @@
             height: 400px;
             position: relative;
             float: right;
+            clear: top;
+            clear: left;
         }
         
         .coco .xiab.linke {
@@ -41,12 +37,13 @@
             padding: 0px;
             width: 570px;
             height: 140px;
-            position: relative;
-            clear: none;
+            position: absolute;
             width: 100%;
             text-align: center;
-            position: fixed;
+            /*    position: fixed; */
+            clear: top;
             bottom: 0;
+            z-index: -300px;
         }
         
         .mind {
@@ -71,7 +68,10 @@
             <li>
                 <h3>js的实验目录</h3><br/>
             </li>
-            <div><span>>>>>></span></div>
+            <div><span>>>>>></span>
+                <div style="color:black;">须知少年凌云志,曾许人间第一流。现今乾坤未定，你我都是黑马。</div>
+                <p>^^^^^^^^^^^^^^^^^</p>
+            </div>
             <div class="mind">
                 <div class="zo">
                     <li> <a href='work1/index.html'>work1 开发环境安装</a><br> </li>
@@ -106,23 +106,14 @@
                 </div>
         </ul>
         </div>
-        <!--
-  </div>
-  <div  class="tow"  >
-<ul>
-  <h3>个人笔记及博文的情况 </h3>
-<li>  111111111111111</li>
-</ul>
-  </div>
--->
     </div>
 
-    <!--<img src="qt/htmlandcss/imags/jiazai.gif" width="300" height="220" alt="" />    加载图-->
 
 </body>
 <div class="xiati">
+
     <div class="coco">
-        <p>该网页将持续更新。。。。。。。。。</p>
+        <p>该网页将持续更新。。。。。。。</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尽情期待哦。。。。。。。 </p>
     </div>
     <div id="copyright" class="xiab"> <small>&copy; 2019.9.8 - 2019.10.21 Designed and developed by THE Mijac_lan -------------=>>>07190716李泳江 </small> </div>

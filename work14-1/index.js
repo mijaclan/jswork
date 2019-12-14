@@ -1,25 +1,17 @@
+////////
 let thetime = new Date();
-let thet = new Date().getTime() + thetime;
-console.log(thet);
-//1575738773420Sun Dec 08 2019 01:12:53 GMT+0800 (中国标准时间)
-///////
-let as = thetime.getFullYear(); //年
-let df = thetime.getMonth(); //月
-let gh = thetime.getDay(); //日
-let jk = thetime.getHours() + 1; //时
-//let kl = thetime.getMinutes; //分
 
+let hour = thetime.getHours(); //当前 时 分  //用固定的60分减去变化的当前时间
+let min = thetime.getMinutes();
+let min60 = 60;
+let sj = 60 - min;
 
-let stopTime = new Date("df  gh as:jk:00"); ///写入月份，日，年，时，分
+//  console.log(sj);
 
 
 
-//设置秒杀的结果时间为1小时之后
-//var nowtime = new Date();//当前时间
-let lefttime = parseInt((stopTime.getTime() - thetime.getTime()) / 1000);
-
-let endseconds = new Date().getTime() + 3600 * 1000;
-
+//该时间为一小时 单位分钟（60*1000）=1分钟
+let endseconds = new Date().getTime() + (sj * 60 * 1000) - (sj * 1000);
 //声明变量保存剩余的时间
 let d = h = m = s = 0;
 //设置定时器，实现限时秒杀效果
@@ -27,7 +19,7 @@ let id = setInterval(seckill, 1000);
 
 function seckill() {
 
-    let nowtime = new Date(); //获取当前时间  这里还有用的？？？？
+    let nowtime = new Date(); //获取当前时间 
     //获取时间差，单位秒
     let remaining = parseInt((endseconds - nowtime.getTime()) / 1000);
     //判断秒杀是否过期
@@ -53,20 +45,14 @@ function seckill() {
     document.getElementById('s').innerHTML = s + '秒';
 }
 //////////////////////////////////————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-/*
-
-*/
-
-
-
-
-
-
-
-
-
+/*分割线
+ 
 ////////__________________________________________________________________________________________________
 
 
 console.log("A:上班996，生病ICU");
 console.log("B:不，,,，应是上课855，生病就宿舍or回家");
+
+
+
+*/

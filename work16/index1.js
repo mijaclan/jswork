@@ -29,7 +29,11 @@ function getStyle(obj, attr) {
         return obj.currentStyle[attr];
     }
 }
+
+
 var obj = document.getElementById('box');
 obj.onclick = function() {
-    animate(obj, { 'left': 200, 'top': 50 });
+    var maxX = parseInt(Math.random() * window.innerWidth); ///////xg
+    var maxY = parseInt(Math.random() * window.innerHeight); //////
+    animate(obj, { 'left': maxX, 'top': maxY });
 };
