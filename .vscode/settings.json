@@ -1,3 +1,6 @@
 {
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "cSpell.words": [
+        "repwd"
+    ]
 }
