@@ -4,75 +4,34 @@
 <head>
     <meta charset="utf-8">
     <title> 李泳江的《javascript web前端开发》课程作业</title>
-    <link rel="stylesheet" href="qt/centerofcss/index.css">
-    <style>
+    <link rel="stylesheet" href="qt/css/index.css">
+    <style type="text/css">
+        /*背景*/
+        
         body {
-            background-image: url(qt/htmlandcss/imags/yuandan.jpg);
-            background-repeat: repeat;
-            background-size: auto;
-        }
-        
-        .zo {
-            width: 200px;
-            height: 400px;
-            position: absolute;
-            float: left;
-        }
-        
-        .zo1 {
-            width: 200px;
-            height: 400px;
-            position: relative;
-            float: right;
-            clear: top;
-            clear: left;
-        }
-        
-        .coco .xiab.linke {
-            clear: both;
-        }
-        
-        .xiati {
-            margin: 0px;
-            padding: 0px;
-            width: 570px;
-            height: 140px;
-            position: absolute;
+            background-image: url(qt/imags/yuandan.jpg);
             width: 100%;
-            text-align: center;
-            /*    position: fixed; */
-            clear: top;
-            bottom: 0;
-            z-index: -300px;
-        }
-        
-        .mind {
-            width: 50%;
-            height: 50%;
-            margin: auto auto;
-            margin-top: 50px;
-            /**/
-            line-height: 21px;
-            display: block;
+            background-repeat: repeat;
         }
     </style>
 </head>
 
 <body>
-    <div id="zuoye" style="  height: 200px;widows: 200px;float: left; "></div>
-    <h2>李泳江的《javascript web前端开发》课程作业</h2>
-    <hr></hr>
-    <!--分割线-->
-    <div id="zuoye" class="one">
-        <ul><br>
-            <li>
-                <h3>js的实验目录</h3><br/>
-            </li>
-            <div><span>>>>>></span>
-                <div style="color:black;">须知少年凌云志,曾许人间第一流。现今乾坤未定，你我都是黑马。</div>
-                <p>^^^^^^^^^^^^^^^^^</p>
-            </div>
-            <div class="mind">
+    <div id="header">
+        <h2>李泳江的《javascript web前端开发》课程作业</h2>
+        <hr/>
+        <div class="tow">
+            <h3>js的实验目录</h3>
+            <span>>>>>></span>
+            <p style="color: red;">须知少年凌云志,曾许人间第一流。现今乾坤未定，你我都是黑马。</p>
+            <hr/>
+        </div>
+    </div>
+
+
+    <div id="Bbox">
+        <div class="mind">
+            <ol>
                 <div class="zo">
                     <li> <a href='work1/index.html'>work1 开发环境安装</a><br> </li>
                     <li> <a href='work2/index.html'>work2 简单网页任务</a><br> </li>
@@ -86,47 +45,44 @@
                     <li> <a href='work8/index.html'> work8 网页计算器与歌德巴赫猜想 </a><br> </li>
                     <li> <a href='work9/index.html'> work9 三级联动       </a><br> </li>
                     <li> <a href='work10/index.html'> work10 猴子选大王</a><br> </li>
+                    <li> <a href='work12/index.html'> work12 万年历 </a><br> </li>
+                    <li> <a href='work13/index.html'> work13 表单生成器 </a><br> </li>
+                    <li> <a href='work14/index.html'> work14 限时秒杀</a><br> </a>
+                    </li>
                 </div>
                 <div class="zo1">
-                    <li> <a href='work12/index.html'> work12 万年历      </a><br> </li>
-                    <li> <a href='work13/index.html'> work13 表单生成器     </a><br> </li>
-                    <li> <a href='work14/index.html'> work14 限时秒杀     </a><br> </a>
-                    </li>
-                    <li> <a href='work14-1/index.html'> work14.1 整点秒杀      </a><br> </li>
+                    <li> <a href='work14-1/index.html'> work14.1 整点秒杀   </a><br> </li>
                     <li> <a href='work14/index1.html'> work14-1 红绿灯    </a><br> </li>
                     <li> <a href='work15/index.html'> work15 购物车   </a><br> </li>
                     <li> <a href='work16/index.html'> work16 放大镜 </a><br> </li>
                     <li> <a href='work16/index1.html'> work16-1 小球快跑   </a><br> </li>
-                    <li> <a href='work17/index.html'> work17    </a><br> </li>
-                    <!--   <li> <a href='work19/index.html'> work19    </a><br> </li>
-            <li> <a href='work20/index.html'> work20    </a><br> </li>
-            <li> <a href='work21/index.html'> work21    </a><br> </li>
-          -->
+                    <li> <a href='work17/index.html'> work17 表单验证   </a><br> </li>
+                    <li> <a href='work18/index.html'> work18  ajax无刷新提交评论  </a><br> </li>
+                    <li> <a href='work18/index1.html'> work18-1 ajax无刷新分页查看评论  </a><br> </li>
+                    <li> <a href='work19/index.html'> work19 WebSocket聊天室 </a><br> </li>
+                    <li> <a href='work19/index1.html'> work19-1 进度条文件上传 </a><br> </li>
+                    <li> <a href='work20/index.html'> work20 折叠菜单 </a><br> </li>
+                    <li> <a href='work20/index1.html'> work20-1 左移与右移</a><br> </li>
+                    <li> <a href='work21/index.html'> work21 无缝轮播图</a><br> </li>
+                    <li> <a href='work21/index1.html'> work21-1 jquery  ajax无刷新提交</a><br> </li>
                 </div>
-        </ul>
+            </ol>
         </div>
     </div>
-
-
-</body>
-<div class="xiati">
-
-    <div class="coco">
+    <div class="clearbox"></div>
+    <div class="updata">
         <p>该网页将持续更新。。。。。。。</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尽情期待哦。。。。。。。 </p>
     </div>
-    <div id="copyright" class="xiab"> <small>&copy; 2019.9.8 - 2019.10.21 Designed and developed by THE Mijac_lan -------------=>>>07190716李泳江 </small> </div>
-    <div class="linke">
-        <a href="https://qm.qq.com/cgi-bin/qm/qr?k=8wq49rmzeFBocsipIdgi-dSEyzXlDp2u " target="blank"><small> 联系我QQ2734473891</small> </a><br>
+    <hr/>
+    <div class="clearbox"></div>
+</body>
+
+<div class="footer">
+    <div class="beian">
+        <small>&copy; 2019.9.8 - 2019.12.24 Designed and developed by THE Mijac_lan </small>
+        <small></small>
     </div>
-
 </div>
-<script>
-    /*便签*/
-    console.log("最近我掉头发有点多，我要回去养养。");
-    console.log("别问我是谁，你问ta，，www.baidu.com");
-    console.log("这个是广州的天气：https://www.baidu.com/s?tn=baidutop10&rsv_idx=2&wd=广州天气预报");
-</script>
-
 
 </html>
